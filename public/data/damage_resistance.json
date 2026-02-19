@@ -1,0 +1,7 @@
+{
+    "VeryWeak": 2,
+    "Weak": 1.5,
+    "SlightlyResistant": 0.75,
+    "Resistant": 0.5,
+    "VeryResistant": 0.25
+}

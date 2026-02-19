@@ -1,0 +1,506 @@
+[
+    {
+        "oldName": "ArmorAshlandsMediumChest",
+        "newName": "Breastplate of Ask"
+    },
+    {
+        "oldName": "ArmorAshlandsMediumlegs",
+        "newName": "Trousers of Ask"
+    },
+    {
+        "oldName": "ArmorBerserkerChest",
+        "newName": "Patterns of the Bear"
+    },
+    {
+        "oldName": "ArmorBerserkerLegs",
+        "newName": "Loincloth of the Bear"
+    },
+    {
+        "oldName": "ArmorBerserkerUndeadChest",
+        "newName": "Vilebone Cage"
+    },
+    {
+        "oldName": "ArmorBerserkerUndeadLegs",
+        "newName": "Vilebone Drapes"
+    },
+    {
+        "oldName": "ArmorBronzeChest",
+        "newName": "Bronze Plate Tunic"
+    },
+    {
+        "oldName": "ArmorBronzeLegs",
+        "newName": "Bronze Plate Leggings"
+    },
+    {
+        "oldName": "ArmorCarapaceChest",
+        "newName": "Carapace Breastplate"
+    },
+    {
+        "oldName": "ArmorCarapaceLegs",
+        "newName": "Carapace Greaves"
+    },
+    {
+        "oldName": "ArmorDress1",
+        "newName": "Plain Brown Dress"
+    },
+    {
+        "oldName": "ArmorDress10",
+        "newName": "Simple Undyed Dress"
+    },
+    {
+        "oldName": "ArmorDress2",
+        "newName": "Brown Dress with Shawl"
+    },
+    {
+        "oldName": "ArmorDress3",
+        "newName": "Brown Dress with Beads"
+    },
+    {
+        "oldName": "ArmorDress4",
+        "newName": "Plain Blue Dress"
+    },
+    {
+        "oldName": "ArmorDress5",
+        "newName": "Blue Dress with Shawl"
+    },
+    {
+        "oldName": "ArmorDress6",
+        "newName": "Blue Dress with Beads"
+    },
+    {
+        "oldName": "ArmorDress7",
+        "newName": "Plain Yellow Dress"
+    },
+    {
+        "oldName": "ArmorDress8",
+        "newName": "Yellow Dress with Shawl"
+    },
+    {
+        "oldName": "ArmorDress9",
+        "newName": "Yellow Dress with Beads"
+    },
+    {
+        "oldName": "ArmorFenringChest",
+        "newName": "Fenris Coat"
+    },
+    {
+        "oldName": "ArmorFenringLegs",
+        "newName": "Fenris Leggings"
+    },
+    {
+        "oldName": "ArmorFlametalChest",
+        "newName": "Flametal Breastplate"
+    },
+    {
+        "oldName": "ArmorFlametalLegs",
+        "newName": "Flametal Greaves"
+    },
+    {
+        "oldName": "ArmorHarvester1",
+        "newName": "Harvest Tunic"
+    },
+    {
+        "oldName": "ArmorHarvester2",
+        "newName": "Harvest Dress"
+    },
+    {
+        "oldName": "ArmorIronChest",
+        "newName": "Iron Scale Mail"
+    },
+    {
+        "oldName": "ArmorIronLegs",
+        "newName": "Iron Greaves"
+    },
+    {
+        "oldName": "ArmorLeatherChest",
+        "newName": "Leather Tunic"
+    },
+    {
+        "oldName": "ArmorLeatherLegs",
+        "newName": "Leather Trousers"
+    },
+    {
+        "oldName": "ArmorMageChest",
+        "newName": "Eitr-weave Robe"
+    },
+    {
+        "oldName": "ArmorMageChest_Ashlands",
+        "newName": "Robes of Embla"
+    },
+    {
+        "oldName": "ArmorMageLegs",
+        "newName": "Eitr-weave Trousers"
+    },
+    {
+        "oldName": "ArmorMageLegs_Ashlands",
+        "newName": "Trousers of Embla"
+    },
+    {
+        "oldName": "ArmorPaddedCuirass",
+        "newName": "Padded Cuirass"
+    },
+    {
+        "oldName": "ArmorPaddedGreaves",
+        "newName": "Padded Greaves"
+    },
+    {
+        "oldName": "ArmorRagsChest",
+        "newName": "Rag Tunic"
+    },
+    {
+        "oldName": "ArmorRagsLegs",
+        "newName": "Rag Trousers"
+    },
+    {
+        "oldName": "ArmorRootChest",
+        "newName": "Root Harnesk"
+    },
+    {
+        "oldName": "ArmorRootLegs",
+        "newName": "Root Leggings"
+    },
+    {
+        "oldName": "ArmorTrollLeatherChest",
+        "newName": "Troll Leather Tunic"
+    },
+    {
+        "oldName": "ArmorTrollLeatherLegs",
+        "newName": "Troll Leather Trousers"
+    },
+    {
+        "oldName": "ArmorTunic1",
+        "newName": "Plain Blue Tunic"
+    },
+    {
+        "oldName": "ArmorTunic10",
+        "newName": "Simple Undyed Tunic"
+    },
+    {
+        "oldName": "ArmorTunic2",
+        "newName": "Blue Tunic with Cape"
+    },
+    {
+        "oldName": "ArmorTunic3",
+        "newName": "Blue Tunic with Beads"
+    },
+    {
+        "oldName": "ArmorTunic4",
+        "newName": "Plain Red Tunic"
+    },
+    {
+        "oldName": "ArmorTunic5",
+        "newName": "Red Tunic with Cape"
+    },
+    {
+        "oldName": "ArmorTunic6",
+        "newName": "Red Tunic with Beads"
+    },
+    {
+        "oldName": "ArmorTunic7",
+        "newName": "Plain Yellow Tunic"
+    },
+    {
+        "oldName": "ArmorTunic8",
+        "newName": "Yellow Tunic with Cape"
+    },
+    {
+        "oldName": "ArmorTunic9",
+        "newName": "Yellow Tunic with Beads"
+    },
+    {
+        "oldName": "ArmorWolfChest",
+        "newName": "Wolf Hide Chestpiece"
+    },
+    {
+        "oldName": "ArmorWolfLegs",
+        "newName": "Wolf Hide Trousers"
+    },
+    {
+        "oldName": "CapeAsh",
+        "newName": "Ashen Cape"
+    },
+    {
+        "oldName": "CapeAsksvin",
+        "newName": "Asksvin Cloak"
+    },
+    {
+        "oldName": "CapeDeerHide",
+        "newName": "Deer Hide Cape"
+    },
+    {
+        "oldName": "CapeFeather",
+        "newName": "Feather Cape"
+    },
+    {
+        "oldName": "CapeLinen",
+        "newName": "Linen Cape"
+    },
+    {
+        "oldName": "CapeLox",
+        "newName": "Lox Cape"
+    },
+    {
+        "oldName": "CapeOdin",
+        "newName": "Cape of Odin"
+    },
+    {
+        "oldName": "CapeTest",
+        "newName": "Cape (Test)"
+    },
+    {
+        "oldName": "CapeTrollHide",
+        "newName": "Troll Hide Cape"
+    },
+    {
+        "oldName": "CapeWolf",
+        "newName": "Wolf Fur Cape"
+    },
+    {
+        "oldName": "Charred_Breastplate",
+        "newName": "Charred Breastplate"
+    },
+    {
+        "oldName": "Charred_Helmet",
+        "newName": "Charred Helmet"
+    },
+    {
+        "oldName": "Charred_HipCloth",
+        "newName": "Charred Hip Cloth"
+    },
+    {
+        "oldName": "Charred_MageCloths",
+        "newName": "Charred Mage Robes"
+    },
+    {
+        "oldName": "DvergerHairFemale",
+        "newName": "Dvergr Hair (Female)"
+    },
+    {
+        "oldName": "DvergerHairFemale_Redhair",
+        "newName": "Dvergr Hair (Female, Red)"
+    },
+    {
+        "oldName": "DvergerHairMale",
+        "newName": "Dvergr Hair (Male)"
+    },
+    {
+        "oldName": "DvergerHairMale_Redbeard",
+        "newName": "Dvergr Hair (Male, Red)"
+    },
+    {
+        "oldName": "DvergerSuitArbalest",
+        "newName": "Dvergr Rogue Armor"
+    },
+    {
+        "oldName": "DvergerSuitArbalest_Ashlands",
+        "newName": "Dvergr Rogue Armor (Ashlands)"
+    },
+    {
+        "oldName": "DvergerSuitFire",
+        "newName": "Dvergr Fire Mage Armor"
+    },
+    {
+        "oldName": "DvergerSuitIce",
+        "newName": "Dvergr Ice Mage Armor"
+    },
+    {
+        "oldName": "DvergerSuitSupport",
+        "newName": "Dvergr Support Mage Armor"
+    },
+    {
+        "oldName": "GoblinArmband",
+        "newName": "Fuling Armband"
+    },
+    {
+        "oldName": "GoblinBrute_ArmGuard",
+        "newName": "Fuling Berserker Arm Guard"
+    },
+    {
+        "oldName": "GoblinBrute_Backbones",
+        "newName": "Fuling Berserker Backbones"
+    },
+    {
+        "oldName": "GoblinBrute_ExecutionerCap",
+        "newName": "Fuling Berserker Executioner Cap"
+    },
+    {
+        "oldName": "GoblinBrute_HipCloth",
+        "newName": "Fuling Berserker Hip Cloth"
+    },
+    {
+        "oldName": "GoblinBrute_ShoulderGuard",
+        "newName": "Fuling Berserker Shoulder Guard"
+    },
+    {
+        "oldName": "GoblinHelmet",
+        "newName": "Fuling Helmet"
+    },
+    {
+        "oldName": "GoblinLegband",
+        "newName": "Fuling Legband"
+    },
+    {
+        "oldName": "GoblinLoin",
+        "newName": "Fuling Loincloth"
+    },
+    {
+        "oldName": "GoblinShaman_Headdress_antlers",
+        "newName": "Fuling Shaman Headdress (Antlers)"
+    },
+    {
+        "oldName": "GoblinShaman_Headdress_feathers",
+        "newName": "Fuling Shaman Headdress (Feathers)"
+    },
+    {
+        "oldName": "GoblinShoulders",
+        "newName": "Fuling Shoulder Pads"
+    },
+    {
+        "oldName": "HelmetAshlandsMediumHood",
+        "newName": "Hood of Ask"
+    },
+    {
+        "oldName": "HelmetBerserkerHood",
+        "newName": "Headdress of the Bear"
+    },
+    {
+        "oldName": "HelmetBerserkerUndead",
+        "newName": "Vilebone Visage"
+    },
+    {
+        "oldName": "HelmetBronze",
+        "newName": "Bronze Helmet"
+    },
+    {
+        "oldName": "HelmetCarapace",
+        "newName": "Carapace Helmet"
+    },
+    {
+        "oldName": "HelmetCelebration",
+        "newName": "Celebratory Cap"
+    },
+    {
+        "oldName": "HelmetDrake",
+        "newName": "Drake Helmet"
+    },
+    {
+        "oldName": "HelmetDverger",
+        "newName": "Dverger Circlet"
+    },
+    {
+        "oldName": "HelmetFenring",
+        "newName": "Fenris Hood"
+    },
+    {
+        "oldName": "HelmetFishingHat",
+        "newName": "Fishing Hat"
+    },
+    {
+        "oldName": "HelmetFlametal",
+        "newName": "Flametal Helmet"
+    },
+    {
+        "oldName": "HelmetHat1",
+        "newName": "Blue Tied Headscarf"
+    },
+    {
+        "oldName": "HelmetHat10",
+        "newName": "Simple Purple Cap"
+    },
+    {
+        "oldName": "HelmetHat2",
+        "newName": "Green Twisted Headscarf"
+    },
+    {
+        "oldName": "HelmetHat3",
+        "newName": "Brown Fur Cap"
+    },
+    {
+        "oldName": "HelmetHat4",
+        "newName": "Extravagant Green Cap"
+    },
+    {
+        "oldName": "HelmetHat5",
+        "newName": "Simple Red Cap"
+    },
+    {
+        "oldName": "HelmetHat6",
+        "newName": "Yellow Tied Headscarf"
+    },
+    {
+        "oldName": "HelmetHat7",
+        "newName": "Red Twisted Headscarf"
+    },
+    {
+        "oldName": "HelmetHat8",
+        "newName": "Grey Fur Cap"
+    },
+    {
+        "oldName": "HelmetHat9",
+        "newName": "Extravagant Orange Cap"
+    },
+    {
+        "oldName": "HelmetIron",
+        "newName": "Iron Helmet"
+    },
+    {
+        "oldName": "HelmetLeather",
+        "newName": "Leather Helmet"
+    },
+    {
+        "oldName": "HelmetMage",
+        "newName": "Eitr-weave Hood"
+    },
+    {
+        "oldName": "HelmetMage_Ashlands",
+        "newName": "Hood of Embla"
+    },
+    {
+        "oldName": "HelmetMidsummerCrown",
+        "newName": "Midsummer Crown"
+    },
+    {
+        "oldName": "HelmetOdin",
+        "newName": "Hood of Odin"
+    },
+    {
+        "oldName": "HelmetPadded",
+        "newName": "Padded Helmet"
+    },
+    {
+        "oldName": "HelmetPointyHat",
+        "newName": "Pointy Hat"
+    },
+    {
+        "oldName": "HelmetRoot",
+        "newName": "Root Mask"
+    },
+    {
+        "oldName": "HelmetStrawHat",
+        "newName": "Straw Hat"
+    },
+    {
+        "oldName": "HelmetSweatBand",
+        "newName": "Headband"
+    },
+    {
+        "oldName": "HelmetTrollLeather",
+        "newName": "Troll Leather Hood"
+    },
+    {
+        "oldName": "HelmetYule",
+        "newName": "Yule Hat"
+    },
+    {
+        "oldName": "StoneGolem_clubs",
+        "newName": "Stone Golem Clubs"
+    },
+    {
+        "oldName": "StoneGolem_hat",
+        "newName": "Stone Golem Hat"
+    },
+    {
+        "oldName": "StoneGolem_spikes",
+        "newName": "Stone Golem Spikes"
+    }
+]

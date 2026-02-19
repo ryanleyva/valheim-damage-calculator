@@ -1,0 +1,17 @@
+[
+    {
+        "zero starred enemy": {
+            "multiplier": 1
+        }
+    },
+    {
+        "one starred enemy": {
+            "multiplier": 1.5
+        }
+    },
+    {
+        "two starred enemy": {
+            "multiplier": 2
+        }
+    }
+]

@@ -1,0 +1,650 @@
+header {
+  text-align: left;
+  padding: 1rem 2rem;
+  margin: 0;
+}
+
+header h1 {
+  margin: 0;
+  color: #d4a574;
+}
+
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #4a3a32;
+  background-color: #3d2f28;
+}
+
+.tab {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #d4c4a8;
+}
+
+.tab:hover {
+  color: #e8dcc6;
+  background-color: rgba(212, 165, 116, 0.1);
+}
+
+.tab.active {
+  color: #d4a574;
+  border-bottom-color: #d4a574;
+  background-color: transparent;
+}
+
+.tab-content {
+  padding: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.construction-placeholder {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #d4c4a8;
+}
+
+.construction-placeholder h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #d4a574;
+}
+
+.construction-placeholder p {
+  font-size: 1.2rem;
+}
+
+.combat-settings {
+  margin-bottom: 2rem;
+}
+
+.combat-settings h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #d4a574;
+}
+
+.combat-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.combat-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #3d2f28;
+  border: 2px solid #4a3a32;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #e8dcc6;
+}
+
+.combat-button:hover {
+  background-color: #4a3a32;
+  border-color: #5a4a42;
+}
+
+.combat-button.active {
+  background-color: #d4a574;
+  color: #2b1f1a;
+  border-color: #c9a06c;
+}
+
+.selected-multiplier {
+  font-size: 1rem;
+  color: #d4c4a8;
+  font-weight: 500;
+}
+
+.health-bar-container {
+  margin-bottom: 2rem;
+}
+
+.health-bar {
+  width: 100%;
+}
+
+.health-label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #d4a574;
+  margin-bottom: 0.75rem;
+}
+
+.health-slider {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: #4a3a32;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-bottom: 0.5rem;
+}
+
+.health-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #d4a574;
+  cursor: pointer;
+  border: 2px solid #2b1f1a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.health-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #d4a574;
+  cursor: pointer;
+  border: 2px solid #2b1f1a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.health-slider::-webkit-slider-thumb:hover {
+  background: #c9a06c;
+}
+
+.health-slider::-moz-range-thumb:hover {
+  background: #c9a06c;
+}
+
+.health-range {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #d4c4a8;
+}
+
+.armor-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+}
+
+.armor-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #d4a574;
+  margin-bottom: 0.75rem;
+}
+
+.armor-field {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #4a3a32;
+  border-radius: 8px;
+  background-color: #3d2f28;
+  color: #e8dcc6;
+  transition: border-color 0.3s ease;
+}
+
+.armor-field:focus {
+  outline: none;
+  border-color: #d4a574;
+}
+
+.armor-field:hover {
+  border-color: #5a4a42;
+}
+
+.enemy-selector {
+  margin-bottom: 2rem;
+}
+
+.enemy-selector-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.enemy-selector h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #d4a574;
+}
+
+.star-rating {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.star-button {
+  background: transparent;
+  border: 2px solid #4a3a32;
+  border-radius: 4px;
+  color: #4a3a32;
+  font-size: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.star-button:hover {
+  border-color: #d4a574;
+  color: #d4a574;
+  background-color: rgba(212, 165, 116, 0.1);
+}
+
+.star-button.active {
+  color: #d4a574;
+  border-color: #d4a574;
+  background-color: rgba(212, 165, 116, 0.2);
+}
+
+.enemy-search {
+  margin-bottom: 1rem;
+}
+
+.enemy-search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #4a3a32;
+  border-radius: 8px;
+  background-color: #3d2f28;
+  color: #e8dcc6;
+  transition: border-color 0.3s ease;
+}
+
+.enemy-search-input:focus {
+  outline: none;
+  border-color: #d4a574;
+}
+
+.enemy-search-input:hover {
+  border-color: #5a4a42;
+}
+
+.enemy-dropdown {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #4a3a32;
+  border-radius: 8px;
+  background-color: #3d2f28;
+  color: #e8dcc6;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.enemy-dropdown:focus {
+  outline: none;
+  border-color: #d4a574;
+}
+
+.enemy-dropdown:hover {
+  border-color: #5a4a42;
+}
+
+.enemy-attacks {
+  margin-top: 2rem;
+}
+
+.enemy-attacks h3 {
+  font-size: 1.3rem;
+  color: #d4a574;
+  margin-bottom: 1rem;
+}
+
+.attack-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #3d2f28;
+  border-radius: 8px;
+  border: 1px solid #4a3a32;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.attack-item:hover {
+  background-color: #4a3a32;
+  border-color: #5a4a42;
+}
+
+.attack-item.selected {
+  border-color: #d4a574;
+  background-color: #4a3a32;
+}
+
+.health-lost-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #4a3a32;
+}
+
+.health-lost-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #d4a574;
+  margin: 0 0 0.5rem 0;
+}
+
+.health-lost-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.health-lost-badge {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  background-color: #6d3a2f;
+  color: #e8dcc6;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.health-lost-total {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #d4a574;
+  margin: 0;
+}
+
+.hits-to-kill {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #d4a574;
+  margin: 0.5rem 0 0 0;
+}
+
+.attack-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #d4a574;
+  margin: 0 0 0.75rem 0;
+}
+
+.damage-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.damage-badge {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  background-color: #5a6d2f;
+  color: #e8dcc6;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.no-damage {
+  color: #d4c4a8;
+  font-style: italic;
+  margin: 0;
+}
+
+.armor-selector {
+  margin-bottom: 2rem;
+}
+
+.armor-selector h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #d4a574;
+}
+
+.armor-dropdowns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.armor-dropdown-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.armor-dropdown-group .armor-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #d4a574;
+  margin-bottom: 0.5rem;
+}
+
+.armor-dropdown {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #4a3a32;
+  border-radius: 8px;
+  background-color: #3d2f28;
+  color: #e8dcc6;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.armor-dropdown:focus {
+  outline: none;
+  border-color: #d4a574;
+}
+
+.armor-dropdown:hover {
+  border-color: #5a4a42;
+}
+
+.armor-slot-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.armor-slot-row .armor-dropdown {
+  flex: 1;
+  min-width: 0;
+}
+
+.armor-level-slider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 90px;
+}
+
+.armor-level-input {
+  width: 60px;
+  height: 6px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #4a3a32;
+  border-radius: 3px;
+}
+
+.armor-level-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #d4a574;
+  cursor: pointer;
+  border: 2px solid #2b1f1a;
+}
+
+.armor-level-input::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #d4a574;
+  cursor: pointer;
+  border: 2px solid #2b1f1a;
+}
+
+.armor-level-label {
+  font-size: 0.875rem;
+  color: #d4c4a8;
+  min-width: 1.5rem;
+}
+
+.armor-total {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #d4a574;
+}
+
+.bonemass-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.bonemass-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #d4a574;
+  cursor: pointer;
+}
+
+.bonemass-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e8dcc6;
+}
+
+.bonemass-note {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #d4c4a8;
+}
+
+.consumable-dropdown-group {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.consumable-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.consumable-add-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1;
+  background-color: #5a6d2f;
+  color: #e8dcc6;
+  border: 2px solid #4a5d2a;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.consumable-add-btn:hover {
+  background-color: #6a7d3f;
+  border-color: #5a6d2f;
+}
+
+.consumable-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.consumable-row .consumable-select {
+  flex: 1;
+  min-width: 0;
+}
+
+.consumable-remove-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: #6d3a2f;
+  color: #e8dcc6;
+  border: 2px solid #5d2a1f;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.consumable-remove-btn:hover {
+  background-color: #7d4a3f;
+  border-color: #6d3a2f;
+}
+
+.consumable-dropdown-group .armor-label {
+  margin-bottom: 0.5rem;
+}
+
+.consumable-select {
+  max-width: 300px;
+}
+
+.armor-resistances {
+  margin-top: 1.5rem;
+}
+
+.armor-resistances-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #d4a574;
+  margin: 0 0 0.75rem 0;
+}
+
+.armor-resistance-piece {
+  margin-bottom: 0.75rem;
+}
+
+.armor-resistance-slot {
+  font-weight: 500;
+  color: #e8dcc6;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.armor-resistance-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.armor-resistance-badge {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  background-color: #5a6d2f;
+  color: #e8dcc6;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}

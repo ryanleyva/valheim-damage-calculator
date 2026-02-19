@@ -1,0 +1,407 @@
+[
+    {
+        "oldName": "Abomination",
+        "newName": "Abomination"
+    },
+    {
+        "oldName": "Asksvin",
+        "newName": "Asksvin"
+    },
+    {
+        "oldName": "Asksvin_hatchling",
+        "newName": "Asksvin Hatchling"
+    },
+    {
+        "oldName": "Bat",
+        "newName": "Bat"
+    },
+    {
+        "oldName": "Bjorn",
+        "newName": "Bear"
+    },
+    {
+        "oldName": "Blob",
+        "newName": "Blob"
+    },
+    {
+        "oldName": "BlobElite",
+        "newName": "Oozer"
+    },
+    {
+        "oldName": "BlobFrost",
+        "newName": "Frost Blob"
+    },
+    {
+        "oldName": "BlobLava",
+        "newName": "Lava Blob"
+    },
+    {
+        "oldName": "BlobTar",
+        "newName": "Growth"
+    },
+    {
+        "oldName": "Boar",
+        "newName": "Boar"
+    },
+    {
+        "oldName": "Boar_piggy",
+        "newName": "Piggy"
+    },
+    {
+        "oldName": "BogWitchKvastur",
+        "newName": "Kvastur"
+    },
+    {
+        "oldName": "Bonemass",
+        "newName": "Bonemass"
+    },
+    {
+        "oldName": "BonemawSerpent",
+        "newName": "Bonemaw"
+    },
+    {
+        "oldName": "Charred_Archer",
+        "newName": "Charred Marksman"
+    },
+    {
+        "oldName": "Charred_Archer_Fader",
+        "newName": "Summoned Charred Warrior"
+    },
+    {
+        "oldName": "Charred_Mage",
+        "newName": "Charred Warlock"
+    },
+    {
+        "oldName": "Charred_Melee",
+        "newName": "Charred Warrior"
+    },
+    {
+        "oldName": "Charred_Melee_Dyrnwyn",
+        "newName": "Lord Reto"
+    },
+    {
+        "oldName": "Charred_Melee_Fader",
+        "newName": "Summoned Charred Warrior"
+    },
+    {
+        "oldName": "Charred_Twitcher",
+        "newName": "Charred Twitcher"
+    },
+    {
+        "oldName": "Charred_Twitcher_Summoned",
+        "newName": "Summoned Twitcher"
+    },
+    {
+        "oldName": "Chicken",
+        "newName": "Chicken"
+    },
+    {
+        "oldName": "Deathsquito",
+        "newName": "Deathsquito"
+    },
+    {
+        "oldName": "Deer",
+        "newName": "Deer"
+    },
+    {
+        "oldName": "Dragon",
+        "newName": "Moder"
+    },
+    {
+        "oldName": "Draugr",
+        "newName": "Draugr"
+    },
+    {
+        "oldName": "Draugr_Elite",
+        "newName": "Draugr Elite"
+    },
+    {
+        "oldName": "Draugr_Ranged",
+        "newName": "Draugr (Ranged)"
+    },
+    {
+        "oldName": "Dverger",
+        "newName": "Dvergr Rogue"
+    },
+    {
+        "oldName": "DvergerAshlands",
+        "newName": "Dvergr Rogue (Ashlands)"
+    },
+    {
+        "oldName": "DvergerMage",
+        "newName": "Dvergr Mage"
+    },
+    {
+        "oldName": "DvergerMageFire",
+        "newName": "Dvergr Mage (Fire)"
+    },
+    {
+        "oldName": "DvergerMageIce",
+        "newName": "Dvergr Mage (Ice)"
+    },
+    {
+        "oldName": "DvergerMageSupport",
+        "newName": "Dvergr Mage (Support)"
+    },
+    {
+        "oldName": "DvergerTest",
+        "newName": "Dvergr (Test)",
+        "ignore": true
+    },
+    {
+        "oldName": "Eikthyr",
+        "newName": "Eikthyr"
+    },
+    {
+        "oldName": "Fader",
+        "newName": "Fader"
+    },
+    {
+        "oldName": "FallenValkyrie",
+        "newName": "Fallen Valkyrie"
+    },
+    {
+        "oldName": "Fenring",
+        "newName": "Fenring"
+    },
+    {
+        "oldName": "Fenring_Cultist",
+        "newName": "Cultist"
+    },
+    {
+        "oldName": "Fenring_Cultist_Hildir",
+        "newName": "Geirrhafa"
+    },
+    {
+        "oldName": "Fenring_Cultist_Hildir_nochest",
+        "newName": "Geirrhafa"
+    },
+    {
+        "oldName": "gd_king",
+        "newName": "The Elder"
+    },
+    {
+        "oldName": "Ghost",
+        "newName": "Ghost"
+    },
+    {
+        "oldName": "Gjall",
+        "newName": "Gjall"
+    },
+    {
+        "oldName": "Goblin",
+        "newName": "Fuling"
+    },
+    {
+        "oldName": "GoblinArcher",
+        "newName": "Fuling (Archer)"
+    },
+    {
+        "oldName": "GoblinBrute",
+        "newName": "Fuling Berserker"
+    },
+    {
+        "oldName": "GoblinBruteBros",
+        "newName": "Zil & Thungr"
+    },
+    {
+        "oldName": "GoblinBruteBros_nochest",
+        "newName": "Zil & Thungr"
+    },
+    {
+        "oldName": "GoblinBrute_Hildir",
+        "newName": "Thungr"
+    },
+    {
+        "oldName": "GoblinKing",
+        "newName": "Yagluth"
+    },
+    {
+        "oldName": "GoblinShaman",
+        "newName": "Fuling Shaman"
+    },
+    {
+        "oldName": "GoblinShaman_Hildir",
+        "newName": "Zil"
+    },
+    {
+        "oldName": "GoblinShaman_Hildir_nochest",
+        "newName": "Zil"
+    },
+    {
+        "oldName": "Goblin_Gem",
+        "newName": "Riktig Fuling"
+    },
+    {
+        "oldName": "Greydwarf",
+        "newName": "Greydwarf"
+    },
+    {
+        "oldName": "Greydwarf_Elite",
+        "newName": "Greydwarf Brute"
+    },
+    {
+        "oldName": "Greydwarf_Shaman",
+        "newName": "Greydwarf Shaman"
+    },
+    {
+        "oldName": "Greyling",
+        "newName": "Greyling"
+    },
+    {
+        "oldName": "Hare",
+        "newName": "Hare"
+    },
+    {
+        "oldName": "Hatchling",
+        "newName": "Drake"
+    },
+    {
+        "oldName": "Hen",
+        "newName": "Hen"
+    },
+    {
+        "oldName": "Hive",
+        "newName": "Hive"
+    },
+    {
+        "oldName": "Leech",
+        "newName": "Leech"
+    },
+    {
+        "oldName": "Leech_cave",
+        "newName": "Leech (Cave)"
+    },
+    {
+        "oldName": "Lox",
+        "newName": "Lox"
+    },
+    {
+        "oldName": "Lox_Calf",
+        "newName": "Lox Calf"
+    },
+    {
+        "oldName": "Mistile",
+        "newName": "Mistile"
+    },
+    {
+        "oldName": "Morgen",
+        "newName": "Morgen"
+    },
+    {
+        "oldName": "Morgen_NonSleeping",
+        "newName": "Morgen (Awake)"
+    },
+    {
+        "oldName": "Neck",
+        "newName": "Neck"
+    },
+    {
+        "oldName": "piece_TrainingDummy",
+        "newName": "T.W.I.G."
+    },
+    {
+        "oldName": "Seeker",
+        "newName": "Seeker"
+    },
+    {
+        "oldName": "SeekerBrood",
+        "newName": "Seeker Brood"
+    },
+    {
+        "oldName": "SeekerBrute",
+        "newName": "Seeker Soldier"
+    },
+    {
+        "oldName": "SeekerQueen",
+        "newName": "The Queen"
+    },
+    {
+        "oldName": "Serpent",
+        "newName": "Serpent"
+    },
+    {
+        "oldName": "Skeleton",
+        "newName": "Skeleton"
+    },
+    {
+        "oldName": "Skeleton_Friendly",
+        "newName": "Skelett"
+    },
+    {
+        "oldName": "Skeleton_Hildir",
+        "newName": "Brenna"
+    },
+    {
+        "oldName": "Skeleton_Hildir_nochest",
+        "newName": "Brenna"
+    },
+    {
+        "oldName": "Skeleton_NoArcher",
+        "newName": "Skeleton (Melee)"
+    },
+    {
+        "oldName": "Skeleton_Poison",
+        "newName": "Rancid Remains"
+    },
+    {
+        "oldName": "staff_greenroots_tentaroot",
+        "newName": "Summoned Root"
+    },
+    {
+        "oldName": "StoneGolem",
+        "newName": "Stone Golem"
+    },
+    {
+        "oldName": "Surtling",
+        "newName": "Surtling"
+    },
+    {
+        "oldName": "TentaRoot",
+        "newName": "Root"
+    },
+    {
+        "oldName": "TheHive",
+        "newName": "The Hive"
+    },
+    {
+        "oldName": "Tick",
+        "newName": "Tick"
+    },
+    {
+        "oldName": "TrainingDummy",
+        "newName": "Training Dummy"
+    },
+    {
+        "oldName": "Troll",
+        "newName": "Troll"
+    },
+    {
+        "oldName": "Troll_Summoned",
+        "newName": "Summoned Troll"
+    },
+    {
+        "oldName": "Ulv",
+        "newName": "Ulv"
+    },
+    {
+        "oldName": "Unbjorn",
+        "newName": "Vile"
+    },
+    {
+        "oldName": "Volture",
+        "newName": "Volture"
+    },
+    {
+        "oldName": "Wolf",
+        "newName": "Wolf"
+    },
+    {
+        "oldName": "Wolf_cub",
+        "newName": "Wolf Cub"
+    },
+    {
+        "oldName": "Wraith",
+        "newName": "Wraith"
+    }
+]

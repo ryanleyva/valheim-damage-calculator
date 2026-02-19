@@ -1,0 +1,702 @@
+[
+    {
+        "oldName": "Abomination_attack1",
+        "newName": "Swipe"
+    },
+    {
+        "oldName": "Abomination_attack2",
+        "newName": "Stomp"
+    },
+    {
+        "oldName": "Abomination_attack3",
+        "newName": "Slam"
+    },
+    {
+        "oldName": "Asksvin_Bite",
+        "newName": "Bite"
+    },
+    {
+        "oldName": "Asksvin_Headbutt",
+        "newName": "Headbutt"
+    },
+    {
+        "oldName": "Asksvin_Pounce",
+        "newName": "Pounce"
+    },
+    {
+        "oldName": "BogWitchKvastur_attack",
+        "newName": "Sweep"
+    },
+    {
+        "oldName": "BonemawSerpent_bite",
+        "newName": "Bite"
+    },
+    {
+        "oldName": "BonemawSerpent_spit",
+        "newName": "Fireball Spit"
+    },
+    {
+        "oldName": "BonemawSerpent_taunt",
+        "newName": "Taunt"
+    },
+    {
+        "oldName": "Deathsquito_sting",
+        "newName": "Sting"
+    },
+    {
+        "oldName": "DvergerArbalest",
+        "newName": "Arbalest"
+    },
+    {
+        "oldName": "DvergerArbalest_shoot",
+        "newName": "Arbalest Shot"
+    },
+    {
+        "oldName": "DvergerArbalest_shootAshlands",
+        "newName": "Arbalest Shot (Ashlands)"
+    },
+    {
+        "oldName": "DvergerStaffFire",
+        "newName": "Fire Staff"
+    },
+    {
+        "oldName": "DvergerStaffFire_clusterbomb",
+        "newName": "Fire Cluster Bomb"
+    },
+    {
+        "oldName": "DvergerStaffFire_fireball",
+        "newName": "Fireball"
+    },
+    {
+        "oldName": "DvergerStaffIce",
+        "newName": "Ice Staff"
+    },
+    {
+        "oldName": "DvergerStaffIce_icebolt",
+        "newName": "Ice Bolt"
+    },
+    {
+        "oldName": "DvergerStaffNova",
+        "newName": "Staff Nova"
+    },
+    {
+        "oldName": "Dverger_melee",
+        "newName": "Staff Melee"
+    },
+    {
+        "oldName": "Dverger_meleeAshlands",
+        "newName": "Staff Melee (Ashlands)"
+    },
+    {
+        "oldName": "Eikthyr_antler",
+        "newName": "Antler Swipe"
+    },
+    {
+        "oldName": "Eikthyr_charge",
+        "newName": "Lightning Bolt"
+    },
+    {
+        "oldName": "Eikthyr_stomp",
+        "newName": "Lightning Stomp"
+    },
+    {
+        "oldName": "Fader_Bite",
+        "newName": "Bite"
+    },
+    {
+        "oldName": "Fader_Claw_Left",
+        "newName": "Left Claw"
+    },
+    {
+        "oldName": "Fader_Claw_Right",
+        "newName": "Right Claw"
+    },
+    {
+        "oldName": "Fader_Fissure",
+        "newName": "Fissure"
+    },
+    {
+        "oldName": "Fader_Fissure_Intense",
+        "newName": "Fissure (Intense)"
+    },
+    {
+        "oldName": "Fader_Flamebreath",
+        "newName": "Fire Breath"
+    },
+    {
+        "oldName": "Fader_Spin",
+        "newName": "Tail Spin"
+    },
+    {
+        "oldName": "Fader_WallOfFire",
+        "newName": "Wall of Fire"
+    },
+    {
+        "oldName": "Fenring_attack_IceNova",
+        "newName": "Ice Nova"
+    },
+    {
+        "oldName": "Fenring_attack_claw",
+        "newName": "Claw"
+    },
+    {
+        "oldName": "Fenring_attack_fireclaw",
+        "newName": "Fire Claw"
+    },
+    {
+        "oldName": "Fenring_attack_fireclaw_double",
+        "newName": "Double Fire Claw"
+    },
+    {
+        "oldName": "Fenring_attack_flames",
+        "newName": "Flame Burst"
+    },
+    {
+        "oldName": "Fenring_attack_frost",
+        "newName": "Frost Bolt"
+    },
+    {
+        "oldName": "Fenring_attack_iceclaw",
+        "newName": "Ice Claw"
+    },
+    {
+        "oldName": "Fenring_attack_iceclaw_double",
+        "newName": "Double Ice Claw"
+    },
+    {
+        "oldName": "Fenring_attack_jump",
+        "newName": "Lunge"
+    },
+    {
+        "oldName": "Ghost_attack",
+        "newName": "Haunt"
+    },
+    {
+        "oldName": "GoblinBruteBros_Attack",
+        "newName": "Club Swing"
+    },
+    {
+        "oldName": "GoblinBruteBros_RageAttack",
+        "newName": "Rage Attack"
+    },
+    {
+        "oldName": "GoblinBrute_Attack",
+        "newName": "Club Swing"
+    },
+    {
+        "oldName": "GoblinBrute_RageAttack",
+        "newName": "Rage Attack"
+    },
+    {
+        "oldName": "GoblinBrute_Taunt",
+        "newName": "Taunt"
+    },
+    {
+        "oldName": "GoblinClub",
+        "newName": "Club"
+    },
+    {
+        "oldName": "GoblinKing_Beam",
+        "newName": "Fire Beam"
+    },
+    {
+        "oldName": "GoblinKing_Nova",
+        "newName": "Nova"
+    },
+    {
+        "oldName": "GoblinShaman_Staff_Hildir",
+        "newName": "Shaman Staff"
+    },
+    {
+        "oldName": "GoblinShaman_attack_fireball",
+        "newName": "Fireball"
+    },
+    {
+        "oldName": "GoblinShaman_attack_fireball_hildir",
+        "newName": "Fireball (Hildir)"
+    },
+    {
+        "oldName": "GoblinShaman_attack_poke",
+        "newName": "Staff Poke"
+    },
+    {
+        "oldName": "GoblinSpear",
+        "newName": "Spear"
+    },
+    {
+        "oldName": "GoblinSword",
+        "newName": "Sword"
+    },
+    {
+        "oldName": "GoblinTorch",
+        "newName": "Torch"
+    },
+    {
+        "oldName": "Greydwarf_attack",
+        "newName": "Scratch"
+    },
+    {
+        "oldName": "Greydwarf_elite_attack",
+        "newName": "Slam"
+    },
+    {
+        "oldName": "Greydwarf_shaman_attack",
+        "newName": "Poison Breath"
+    },
+    {
+        "oldName": "Greydwarf_throw",
+        "newName": "Rock Throw"
+    },
+    {
+        "oldName": "Greyling_attack",
+        "newName": "Scratch"
+    },
+    {
+        "oldName": "Leech_BiteAttack",
+        "newName": "Bite"
+    },
+    {
+        "oldName": "Mistile_kamikaze",
+        "newName": "Kamikaze"
+    },
+    {
+        "oldName": "Morgen_bite",
+        "newName": "Bite"
+    },
+    {
+        "oldName": "Morgen_bodyslam",
+        "newName": "Body Slam"
+    },
+    {
+        "oldName": "Morgen_roll_left",
+        "newName": "Roll Left"
+    },
+    {
+        "oldName": "Morgen_roll_right",
+        "newName": "Roll Right"
+    },
+    {
+        "oldName": "Morgen_swipe_1",
+        "newName": "Swipe 1"
+    },
+    {
+        "oldName": "Morgen_swipe_2",
+        "newName": "Swipe 2"
+    },
+    {
+        "oldName": "Morgen_swipe_3",
+        "newName": "Swipe 3"
+    },
+    {
+        "oldName": "Morgen_swipe_4",
+        "newName": "Swipe 4"
+    },
+    {
+        "oldName": "Neck_BiteAttack",
+        "newName": "Bite"
+    },
+    {
+        "oldName": "SeekerBrute_Taunt",
+        "newName": "Taunt"
+    },
+    {
+        "oldName": "SeekerBrute_bite",
+        "newName": "Bite"
+    },
+    {
+        "oldName": "SeekerBrute_groundslam",
+        "newName": "Ground Slam"
+    },
+    {
+        "oldName": "SeekerBrute_ram",
+        "newName": "Ram"
+    },
+    {
+        "oldName": "SeekerQueen_Bite",
+        "newName": "Bite"
+    },
+    {
+        "oldName": "SeekerQueen_Call",
+        "newName": "Summon"
+    },
+    {
+        "oldName": "SeekerQueen_PierceAOE",
+        "newName": "Pierce AoE"
+    },
+    {
+        "oldName": "SeekerQueen_Rush",
+        "newName": "Rush"
+    },
+    {
+        "oldName": "SeekerQueen_Slap",
+        "newName": "Slap"
+    },
+    {
+        "oldName": "SeekerQueen_Spit",
+        "newName": "Spit"
+    },
+    {
+        "oldName": "SeekerQueen_Teleport",
+        "newName": "Teleport"
+    },
+    {
+        "oldName": "Serpent_attack",
+        "newName": "Bite"
+    },
+    {
+        "oldName": "Serpent_taunt",
+        "newName": "Taunt"
+    },
+    {
+        "oldName": "Ulv_attack1_bite",
+        "newName": "Bite"
+    },
+    {
+        "oldName": "Ulv_attack2_slash",
+        "newName": "Slash"
+    },
+    {
+        "oldName": "Wolf_Attack1",
+        "newName": "Bite (Left)"
+    },
+    {
+        "oldName": "Wolf_Attack2",
+        "newName": "Bite (Right)"
+    },
+    {
+        "oldName": "Wolf_Attack3",
+        "newName": "Lunge Bite"
+    },
+    {
+        "oldName": "babyseeker_attack",
+        "newName": "Bite"
+    },
+    {
+        "oldName": "bat_melee",
+        "newName": "Bite"
+    },
+    {
+        "oldName": "bjorn_bite",
+        "newName": "Bite"
+    },
+    {
+        "oldName": "bjorn_claws",
+        "newName": "Claw"
+    },
+    {
+        "oldName": "bjorn_slam",
+        "newName": "Slam"
+    },
+    {
+        "oldName": "bjorn_swipe_combo",
+        "newName": "Swipe Combo"
+    },
+    {
+        "oldName": "bjorn_swipe_l",
+        "newName": "Left Swipe"
+    },
+    {
+        "oldName": "bjorn_swipe_r",
+        "newName": "Right Swipe"
+    },
+    {
+        "oldName": "blob_attack_aoe",
+        "newName": "Poison Cloud"
+    },
+    {
+        "oldName": "blob_frost_attack_aoe",
+        "newName": "Frost Cloud"
+    },
+    {
+        "oldName": "blobelite_attack_aoe",
+        "newName": "Poison Cloud"
+    },
+    {
+        "oldName": "blobtar_attack",
+        "newName": "Tar Spit"
+    },
+    {
+        "oldName": "boar_base_attack",
+        "newName": "Gore"
+    },
+    {
+        "oldName": "bonemass_attack_aoe",
+        "newName": "Poison AoE"
+    },
+    {
+        "oldName": "bonemass_attack_punch",
+        "newName": "Punch"
+    },
+    {
+        "oldName": "charred_bow",
+        "newName": "Bow Shot"
+    },
+    {
+        "oldName": "charred_bow_Fader",
+        "newName": "Bow Shot"
+    },
+    {
+        "oldName": "charred_bow_volley",
+        "newName": "Bow Volley"
+    },
+    {
+        "oldName": "charred_bow_volley_Fader",
+        "newName": "Bow Volley"
+    },
+    {
+        "oldName": "charred_dyrnwyn_greatsword_feint",
+        "newName": "Greatsword Feint"
+    },
+    {
+        "oldName": "charred_dyrnwyn_greatsword_swing",
+        "newName": "Greatsword Swing"
+    },
+    {
+        "oldName": "charred_dyrnwyn_greatsword_thrust",
+        "newName": "Greatsword Thrust"
+    },
+    {
+        "oldName": "charred_dyrnwyn_greatsword_thrustfeint",
+        "newName": "Greatsword Thrust Feint"
+    },
+    {
+        "oldName": "charred_fader_greatsword_feint",
+        "newName": "Greatsword Feint"
+    },
+    {
+        "oldName": "charred_fader_greatsword_swing",
+        "newName": "Greatsword Swing"
+    },
+    {
+        "oldName": "charred_fader_greatsword_thrust",
+        "newName": "Greatsword Thrust"
+    },
+    {
+        "oldName": "charred_fader_greatsword_thrustfeint",
+        "newName": "Greatsword Thrust Feint"
+    },
+    {
+        "oldName": "charred_greatsword_feint",
+        "newName": "Greatsword Feint"
+    },
+    {
+        "oldName": "charred_greatsword_swing",
+        "newName": "Greatsword Swing"
+    },
+    {
+        "oldName": "charred_greatsword_thrust",
+        "newName": "Greatsword Thrust"
+    },
+    {
+        "oldName": "charred_greatsword_thrustfeint",
+        "newName": "Greatsword Thrust Feint"
+    },
+    {
+        "oldName": "charred_magestaff_fire",
+        "newName": "Fireball"
+    },
+    {
+        "oldName": "charred_magestaff_summon",
+        "newName": "Summon Twitcher"
+    },
+    {
+        "oldName": "charred_twitcher_scratch_l",
+        "newName": "Left Scratch"
+    },
+    {
+        "oldName": "charred_twitcher_scratch_r",
+        "newName": "Right Scratch"
+    },
+    {
+        "oldName": "charred_twitcher_throw",
+        "newName": "Fire Rock Throw"
+    },
+    {
+        "oldName": "dragon_bite",
+        "newName": "Bite"
+    },
+    {
+        "oldName": "dragon_claw_left",
+        "newName": "Left Claw"
+    },
+    {
+        "oldName": "dragon_claw_right",
+        "newName": "Right Claw"
+    },
+    {
+        "oldName": "dragon_coldbreath",
+        "newName": "Frost Breath"
+    },
+    {
+        "oldName": "dragon_spit_shotgun",
+        "newName": "Ice Barrage"
+    },
+    {
+        "oldName": "draugr_axe",
+        "newName": "Axe"
+    },
+    {
+        "oldName": "draugr_bow",
+        "newName": "Bow"
+    },
+    {
+        "oldName": "draugr_sword",
+        "newName": "Sword"
+    },
+    {
+        "oldName": "fallenvalkyrie_claws",
+        "newName": "Claw Swipe"
+    },
+    {
+        "oldName": "fallenvalkyrie_spin",
+        "newName": "Whirlwind"
+    },
+    {
+        "oldName": "fallenvalkyrie_taunt",
+        "newName": "Fire Projectiles"
+    },
+    {
+        "oldName": "gd_king_shoot",
+        "newName": "Vine Shoot"
+    },
+    {
+        "oldName": "gd_king_stomp",
+        "newName": "Vine Stomp"
+    },
+    {
+        "oldName": "gjall_attack_shake",
+        "newName": "Shake"
+    },
+    {
+        "oldName": "gjall_attack_spit",
+        "newName": "Spit"
+    },
+    {
+        "oldName": "hatchling_spit_cold",
+        "newName": "Frost Spit"
+    },
+    {
+        "oldName": "hive_attack_aoe",
+        "newName": "AoE"
+    },
+    {
+        "oldName": "hive_attack_punch",
+        "newName": "Punch"
+    },
+    {
+        "oldName": "hive_attack_ranged",
+        "newName": "Ranged Attack"
+    },
+    {
+        "oldName": "imp_fireball_attack",
+        "newName": "Fireball"
+    },
+    {
+        "oldName": "lox_bite",
+        "newName": "Bite"
+    },
+    {
+        "oldName": "lox_stomp",
+        "newName": "Stomp"
+    },
+    {
+        "oldName": "seeker_claw_left",
+        "newName": "Left Claw"
+    },
+    {
+        "oldName": "seeker_claw_right",
+        "newName": "Right Claw"
+    },
+    {
+        "oldName": "seeker_groundslam",
+        "newName": "Ground Slam"
+    },
+    {
+        "oldName": "seeker_groundslam_flying",
+        "newName": "Flying Ground Slam"
+    },
+    {
+        "oldName": "seeker_land",
+        "newName": "Landing Strike"
+    },
+    {
+        "oldName": "seeker_pincers",
+        "newName": "Pincer Attack"
+    },
+    {
+        "oldName": "seeker_takeoff",
+        "newName": "Takeoff"
+    },
+    {
+        "oldName": "skeleton_bow",
+        "newName": "Bow"
+    },
+    {
+        "oldName": "skeleton_bow2",
+        "newName": "Bow"
+    },
+    {
+        "oldName": "skeleton_hildir_firenova",
+        "newName": "Fire Nova"
+    },
+    {
+        "oldName": "skeleton_mace",
+        "newName": "Poison Mace"
+    },
+    {
+        "oldName": "skeleton_sword",
+        "newName": "Sword"
+    },
+    {
+        "oldName": "skeleton_sword2",
+        "newName": "Sword"
+    },
+    {
+        "oldName": "skeleton_sword_hildir",
+        "newName": "Sword"
+    },
+    {
+        "oldName": "staff_greenroots_tentaroot_attack",
+        "newName": "Root Lash"
+    },
+    {
+        "oldName": "tentaroot_attack",
+        "newName": "Root Lash"
+    },
+    {
+        "oldName": "tick_attack_attach",
+        "newName": "Attach"
+    },
+    {
+        "oldName": "unbjorn_bite",
+        "newName": "Bite"
+    },
+    {
+        "oldName": "unbjorn_claws",
+        "newName": "Claw"
+    },
+    {
+        "oldName": "unbjorn_slam",
+        "newName": "Slam"
+    },
+    {
+        "oldName": "unbjorn_swipe_combo",
+        "newName": "Swipe Combo"
+    },
+    {
+        "oldName": "unbjorn_swipe_l",
+        "newName": "Left Swipe"
+    },
+    {
+        "oldName": "unbjorn_swipe_r",
+        "newName": "Right Swipe"
+    },
+    {
+        "oldName": "volture_talons",
+        "newName": "Talon Strike"
+    },
+    {
+        "oldName": "wraith_melee",
+        "newName": "Claw Swipe"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Very Easy",
+        "multiplier": 0.5
+    },
+    {
+        "name": "Easy",
+        "multiplier": 0.75
+    },
+    {
+        "name": "Normal",
+        "multiplier": 1
+    },
+    {
+        "name": "Hard",
+        "multiplier": 1.5
+    },
+    {
+        "name": "Very Hard",
+        "multiplier": 2
+    }
+]
