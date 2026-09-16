@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
+import { usePersistentState } from '../hooks/usePersistentState'
 
 interface ArmorItem {
   prefab: string
@@ -42,17 +43,17 @@ function ArmorSelector({ onArmorChange, onTotalArmorChange, onResistancesChange,
   const [armorItems, setArmorItems] = useState<ArmorItem[]>([])
   const [armorRenameMap, setArmorRenameMap] = useState<Record<string, string>>({})
   const [damageResistanceMap, setDamageResistanceMap] = useState<Record<string, number>>({})
-  const [selectedChest, setSelectedChest] = useState<string>('')
-  const [selectedLegs, setSelectedLegs] = useState<string>('')
-  const [selectedHelmet, setSelectedHelmet] = useState<string>('')
-  const [selectedShoulder, setSelectedShoulder] = useState<string>('')
-  const [chestLevel, setChestLevel] = useState<number>(0)
-  const [legsLevel, setLegsLevel] = useState<number>(0)
-  const [helmetLevel, setHelmetLevel] = useState<number>(0)
-  const [shoulderLevel, setShoulderLevel] = useState<number>(0)
-  const [bonemassEnabled, setBonemassEnabled] = useState<boolean>(false)
+  const [selectedChest, setSelectedChest] = usePersistentState<string>('selectedChest', '')
+  const [selectedLegs, setSelectedLegs] = usePersistentState<string>('selectedLegs', '')
+  const [selectedHelmet, setSelectedHelmet] = usePersistentState<string>('selectedHelmet', '')
+  const [selectedShoulder, setSelectedShoulder] = usePersistentState<string>('selectedShoulder', '')
+  const [chestLevel, setChestLevel] = usePersistentState<number>('chestLevel', 0)
+  const [legsLevel, setLegsLevel] = usePersistentState<number>('legsLevel', 0)
+  const [helmetLevel, setHelmetLevel] = usePersistentState<number>('helmetLevel', 0)
+  const [shoulderLevel, setShoulderLevel] = usePersistentState<number>('shoulderLevel', 0)
+  const [bonemassEnabled, setBonemassEnabled] = usePersistentState<boolean>('bonemassEnabled', false)
   const [consumables, setConsumables] = useState<Consumable[]>([])
-  const [selectedConsumables, setSelectedConsumables] = useState<string[]>([''])
+  const [selectedConsumables, setSelectedConsumables] = usePersistentState<string[]>('selectedConsumables', [''])
 
   const ARMOR_MAX_LEVEL = 4
 
@@ -540,6 +541,27 @@ function ArmorSelector({ onArmorChange, onTotalArmorChange, onResistancesChange,
               </div>
             )
           })}
+        </div>
+      )}
+      {Object.keys(combinedResistances).length > 0 && (
+        <div className="armor-resistances">
+          <h3 className="armor-resistances-title">Effective Damage Resistances</h3>
+          <p className="armor-resistances-note">
+            Resistances don't stack — the best modifier wins, so a consumable fully negates a weaker armor modifier
+            for the same damage type (and vice versa).
+          </p>
+          <div className="armor-resistance-list">
+            {Object.entries(combinedResistances)
+              .sort(([a], [b]) => a.localeCompare(b))
+              .map(([dmgType, mult]) => (
+                <span
+                  key={dmgType}
+                  className={`armor-resistance-badge effective ${mult < 1 ? 'good' : mult > 1 ? 'bad' : ''}`}
+                >
+                  {dmgType}: {mult}x
+                </span>
+              ))}
+          </div>
         </div>
       )}
     </div>

@@ -9,58 +9,10 @@ header h1 {
   color: #d4a574;
 }
 
-.tabs {
-  display: flex;
-  justify-content: flex-start;
-  gap: 0.5rem;
-  padding: 1rem 2rem;
-  border-bottom: 2px solid #4a3a32;
-  background-color: #3d2f28;
-}
-
-.tab {
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
-  font-weight: 500;
-  background-color: transparent;
-  border: none;
-  border-bottom: 3px solid transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  color: #d4c4a8;
-}
-
-.tab:hover {
-  color: #e8dcc6;
-  background-color: rgba(212, 165, 116, 0.1);
-}
-
-.tab.active {
-  color: #d4a574;
-  border-bottom-color: #d4a574;
-  background-color: transparent;
-}
-
 .tab-content {
   padding: 2rem;
   max-width: 1280px;
   margin: 0 auto;
-}
-
-.construction-placeholder {
-  text-align: center;
-  padding: 4rem 2rem;
-  color: #d4c4a8;
-}
-
-.construction-placeholder h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #d4a574;
-}
-
-.construction-placeholder p {
-  font-size: 1.2rem;
 }
 
 .combat-settings {
@@ -373,11 +325,44 @@ header h1 {
   margin: 0.5rem 0 0 0;
 }
 
+.parry-threshold-note {
+  color: #d4c4a8;
+  font-size: 0.9rem;
+  margin: -0.5rem 0 1rem 0;
+}
+
+.attack-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 0.75rem 0;
+}
+
 .attack-name {
   font-size: 1.1rem;
   font-weight: 600;
   color: #d4a574;
-  margin: 0 0 0.75rem 0;
+  margin: 0;
+}
+
+.parry-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.parry-badge.parryable {
+  background-color: #2f6d3a;
+  color: #e8dcc6;
+}
+
+.parry-badge.not-parryable {
+  background-color: #6d2f2f;
+  color: #e8dcc6;
 }
 
 .damage-types {
@@ -402,8 +387,28 @@ header h1 {
   margin: 0;
 }
 
-.armor-selector {
+.armor-selector,
+.shield-selector,
+.weapon-selector {
   margin-bottom: 2rem;
+}
+
+.shield-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.shield-stat-badge {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  background-color: #3d2f28;
+  border: 1px solid #4a3a32;
+  color: #e8dcc6;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .armor-selector h2 {
@@ -647,4 +652,18 @@ header h1 {
   color: #e8dcc6;
   border-radius: 6px;
   font-size: 0.875rem;
+}
+
+.armor-resistances-note {
+  color: #d4c4a8;
+  font-size: 0.85rem;
+  margin: -0.25rem 0 0.75rem 0;
+}
+
+.armor-resistance-badge.effective.good {
+  background-color: #2f6d3a;
+}
+
+.armor-resistance-badge.effective.bad {
+  background-color: #6d2f2f;
 }

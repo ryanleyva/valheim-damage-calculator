@@ -1,11 +1,12 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
+import { usePersistentState } from '../hooks/usePersistentState'
 
 interface HealthBarProps {
   onHealthChange?: (health: number) => void
 }
 
 function HealthBar({ onHealthChange }: HealthBarProps) {
-  const [health, setHealth] = useState<number>(100)
+  const [health, setHealth] = usePersistentState<number>('playerHealth', 100)
 
   useEffect(() => {
     onHealthChange?.(health)

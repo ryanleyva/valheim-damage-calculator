@@ -656,10 +656,6 @@
         "newName": "Sword"
     },
     {
-        "oldName": "staff_greenroots_tentaroot_attack",
-        "newName": "Root Lash"
-    },
-    {
         "oldName": "tentaroot_attack",
         "newName": "Root Lash"
     },
@@ -698,5 +694,49 @@
     {
         "oldName": "wraith_melee",
         "newName": "Claw Swipe"
+    },
+    {
+        "oldName": "Troll_punch",
+        "newName": "Punch"
+    },
+    {
+        "oldName": "Troll_groundslam",
+        "newName": "Ground Slam"
+    },
+    {
+        "oldName": "Troll_throw",
+        "newName": "Boulder Throw"
+    },
+    {
+        "oldName": "Troll_logswing_vertical",
+        "newName": "Log Swing (Vertical)"
+    },
+    {
+        "oldName": "Troll_logswing_horizontal",
+        "newName": "Log Swing (Horizontal)"
+    },
+    {
+        "oldName": "StoneGolem_groundslam",
+        "newName": "Ground Slam"
+    },
+    {
+        "oldName": "StoneGolem_doublesmash",
+        "newName": "Double Smash"
+    },
+    {
+        "oldName": "StoneGolem_spikethrust",
+        "newName": "Spike Thrust"
+    },
+    {
+        "oldName": "StoneGolem_spikesweep",
+        "newName": "Spike Sweep"
+    },
+    {
+        "oldName": "blobLava_attack_aoe",
+        "newName": "Explosion"
+    },
+    {
+        "oldName": "Hen_peck",
+        "newName": "Peck"
     }
 ]

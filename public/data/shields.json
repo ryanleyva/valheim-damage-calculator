@@ -1,0 +1,167 @@
+[
+  {
+    "prefab": "ShieldWood",
+    "displayName": "Wood Shield",
+    "shieldType": "Round",
+    "blockPower": 6,
+    "blockPowerPerLevel": 6,
+    "blockForce": 20,
+    "blockForcePerLevel": 5,
+    "parryBonus": 1.5,
+    "movementModifier": -0.05
+  },
+  {
+    "prefab": "ShieldWoodTower",
+    "displayName": "Wood Tower Shield",
+    "shieldType": "Tower",
+    "blockPower": 10,
+    "blockPowerPerLevel": 6,
+    "blockForce": 100,
+    "blockForcePerLevel": 5,
+    "parryBonus": 0,
+    "movementModifier": -0.1
+  },
+  {
+    "prefab": "ShieldBoneTower",
+    "displayName": "Bone Tower Shield",
+    "shieldType": "Tower",
+    "blockPower": 32,
+    "blockPowerPerLevel": 6,
+    "blockForce": 100,
+    "blockForcePerLevel": 5,
+    "parryBonus": 0,
+    "movementModifier": -0.1
+  },
+  {
+    "prefab": "ShieldBronzeBuckler",
+    "displayName": "Bronze Buckler",
+    "shieldType": "Buckler",
+    "blockPower": 16,
+    "blockPowerPerLevel": 6,
+    "blockForce": 30,
+    "blockForcePerLevel": 0,
+    "parryBonus": 2.5,
+    "movementModifier": -0.05
+  },
+  {
+    "prefab": "ShieldBanded",
+    "displayName": "Banded Shield",
+    "shieldType": "Round",
+    "blockPower": 42,
+    "blockPowerPerLevel": 6,
+    "blockForce": 40,
+    "blockForcePerLevel": 5,
+    "parryBonus": 1.5,
+    "movementModifier": -0.05
+  },
+  {
+    "prefab": "ShieldIronBuckler",
+    "displayName": "Iron Buckler",
+    "shieldType": "Buckler",
+    "blockPower": 28,
+    "blockPowerPerLevel": 6,
+    "blockForce": 30,
+    "blockForcePerLevel": 0,
+    "parryBonus": 2.5,
+    "movementModifier": -0.05
+  },
+  {
+    "prefab": "ShieldIronTower",
+    "displayName": "Iron Tower Shield",
+    "shieldType": "Tower",
+    "blockPower": 52,
+    "blockPowerPerLevel": 6,
+    "blockForce": 100,
+    "blockForcePerLevel": 5,
+    "parryBonus": 0,
+    "movementModifier": -0.1
+  },
+  {
+    "prefab": "ShieldSilver",
+    "displayName": "Silver Shield",
+    "shieldType": "Round",
+    "blockPower": 60,
+    "blockPowerPerLevel": 6,
+    "blockForce": 40,
+    "blockForcePerLevel": 5,
+    "parryBonus": 1.5,
+    "movementModifier": -0.05
+  },
+  {
+    "prefab": "ShieldSerpentscale",
+    "displayName": "Serpent Scale Shield",
+    "shieldType": "Tower",
+    "blockPower": 60,
+    "blockPowerPerLevel": 6,
+    "blockForce": 100,
+    "blockForcePerLevel": 5,
+    "parryBonus": 0,
+    "movementModifier": -0.1
+  },
+  {
+    "prefab": "ShieldBlackmetal",
+    "displayName": "Black Metal Shield",
+    "shieldType": "Round",
+    "blockPower": 78,
+    "blockPowerPerLevel": 6,
+    "blockForce": 50,
+    "blockForcePerLevel": 5,
+    "parryBonus": 1.5,
+    "movementModifier": -0.05
+  },
+  {
+    "prefab": "ShieldBlackmetalTower",
+    "displayName": "Black Metal Tower Shield",
+    "shieldType": "Tower",
+    "blockPower": 104,
+    "blockPowerPerLevel": 6,
+    "blockForce": 150,
+    "blockForcePerLevel": 5,
+    "parryBonus": 0,
+    "movementModifier": -0.1
+  },
+  {
+    "prefab": "ShieldCarapaceBuckler",
+    "displayName": "Carapace Buckler",
+    "shieldType": "Buckler",
+    "blockPower": 78,
+    "blockPowerPerLevel": 6,
+    "blockForce": 50,
+    "blockForcePerLevel": 5,
+    "parryBonus": 2.5,
+    "movementModifier": -0.05
+  },
+  {
+    "prefab": "ShieldCarapace",
+    "displayName": "Carapace Shield",
+    "shieldType": "Round",
+    "blockPower": 96,
+    "blockPowerPerLevel": 6,
+    "blockForce": 60,
+    "blockForcePerLevel": 5,
+    "parryBonus": 1.5,
+    "movementModifier": -0.05
+  },
+  {
+    "prefab": "ShieldFlametal",
+    "displayName": "Flametal Shield",
+    "shieldType": "Round",
+    "blockPower": 114,
+    "blockPowerPerLevel": 6,
+    "blockForce": 50,
+    "blockForcePerLevel": 5,
+    "parryBonus": 1.5,
+    "movementModifier": -0.05
+  },
+  {
+    "prefab": "ShieldFlametalTower",
+    "displayName": "Flametal Tower Shield",
+    "shieldType": "Tower",
+    "blockPower": 140,
+    "blockPowerPerLevel": 6,
+    "blockForce": 150,
+    "blockForcePerLevel": 5,
+    "parryBonus": 0,
+    "movementModifier": -0.1
+  }
+]

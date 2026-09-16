@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
+import { usePersistentState } from '../hooks/usePersistentState'
 
 interface Enemy {
   prefab: string
@@ -11,6 +12,7 @@ interface Enemy {
     itemType: string
     damages: Record<string, number>
     damagesPerLevel: Record<string, number>
+    attackForce: number
   }>
 }
 
@@ -25,11 +27,14 @@ interface EnemySelectorProps {
   resistances?: Record<string, number>
   bonemassEnabled?: boolean
   playerHealth?: number
+  parryThreshold?: number
+  canParry?: boolean
 }
 
 interface AttackRename {
   oldName: string
   newName: string
+  ignore?: boolean
 }
 
 // Calculate health lost from damage: if armor < damage/2 then damage - armor, else damage²/(armor*4)
@@ -55,14 +60,15 @@ function applyResistance(
   return rawDamage * mult
 }
 
-function EnemySelector({ onEnemyChange, combatMultiplier = 1, onStarMultiplierChange, totalArmor = 0, resistances = {}, bonemassEnabled = false, playerHealth = 100 }: EnemySelectorProps) {
+function EnemySelector({ onEnemyChange, combatMultiplier = 1, onStarMultiplierChange, totalArmor = 0, resistances = {}, bonemassEnabled = false, playerHealth = 100, parryThreshold = 0, canParry = false }: EnemySelectorProps) {
   const [enemies, setEnemies] = useState<Enemy[]>([])
   const [searchTerm, setSearchTerm] = useState<string>('')
-  const [selectedEnemy, setSelectedEnemy] = useState<string>('')
-  const [starRating, setStarRating] = useState<number>(0) // 0, 1, or 2 stars
+  const [selectedEnemy, setSelectedEnemy] = usePersistentState<string>('selectedEnemy', '')
+  const [starRating, setStarRating] = usePersistentState<number>('starRating', 0) // 0, 1, or 2 stars
   const [selectedAttackIndex, setSelectedAttackIndex] = useState<number | null>(null)
   const [attackRenameMap, setAttackRenameMap] = useState<Record<string, string>>({})
   const [enemyRenameMap, setEnemyRenameMap] = useState<Record<string, string>>({})
+  const [ignoredEnemyPrefabs, setIgnoredEnemyPrefabs] = useState<Set<string>>(new Set())
 
   useEffect(() => {
     fetch('/data/attack_rename.json')
@@ -88,6 +94,9 @@ function EnemySelector({ onEnemyChange, combatMultiplier = 1, onStarMultiplierCh
           map[oldName.toLowerCase()] = newName
         })
         setEnemyRenameMap(map)
+        setIgnoredEnemyPrefabs(
+          new Set(list.filter((entry) => entry.ignore).map((entry) => entry.oldName.toLowerCase()))
+        )
       })
       .catch((err) => console.error('Error loading enemy renames:', err))
   }, [])
@@ -109,12 +118,13 @@ function EnemySelector({ onEnemyChange, combatMultiplier = 1, onStarMultiplierCh
         // Normalize attacks: some files use name/damage, we expect prefab/damages
         const normalized = data.map((enemy) => ({
           ...enemy,
-          attacks: (enemy.attacks ?? []).map((a: { prefab?: string; name?: string; damages?: Record<string, number>; damage?: Record<string, number>; damagesPerLevel?: Record<string, number>; damagePerLevel?: Record<string, number> }) => ({
+          attacks: (enemy.attacks ?? []).map((a: { prefab?: string; name?: string; damages?: Record<string, number>; damage?: Record<string, number>; damagesPerLevel?: Record<string, number>; damagePerLevel?: Record<string, number>; attackForce?: number }) => ({
             prefab: a.prefab ?? a.name ?? '',
             displayName: (a as { displayName?: string }).displayName ?? (a.name ?? a.prefab ?? ''),
             itemType: (a as { itemType?: string }).itemType ?? 'OneHandedWeapon',
             damages: a.damages ?? a.damage ?? {},
             damagesPerLevel: (a as { damagesPerLevel?: Record<string, number> }).damagesPerLevel ?? a.damagePerLevel ?? {},
+            attackForce: a.attackForce ?? 0,
           })),
         }))
 
@@ -155,17 +165,20 @@ function EnemySelector({ onEnemyChange, combatMultiplier = 1, onStarMultiplierCh
       })
   }, [])
 
-  // Group enemies by faction
+  // Group enemies by faction, skipping any prefab flagged "ignore" in enemy_rename.json
   const enemiesByFaction = useMemo(() => {
     const grouped: Record<string, Enemy[]> = {}
     enemies.forEach((enemy) => {
+      if (ignoredEnemyPrefabs.has(enemy.prefab.toLowerCase())) {
+        return
+      }
       if (!grouped[enemy.faction]) {
         grouped[enemy.faction] = []
       }
       grouped[enemy.faction].push(enemy)
     })
     return grouped
-  }, [enemies])
+  }, [enemies, ignoredEnemyPrefabs])
 
   // Display name for enemy: use enemy_rename.json if present, else displayName or prefab
   const getEnemyDisplayName = (enemy: Enemy) => {
@@ -238,6 +251,14 @@ function EnemySelector({ onEnemyChange, combatMultiplier = 1, onStarMultiplierCh
       .join(' ')
   }
 
+  // An attack is parryable if its total raw incoming damage is at or below the parry
+  // threshold ((block power * parry bonus) + (max health * 0.4)), computed from the
+  // equipped shield (or weapon, if no shield) in App. No shield/weapon (or a 0
+  // parry-bonus shield, e.g. tower shields) means nothing is parryable.
+  const isParryable = (totalRawDamage: number): boolean => {
+    return canParry && totalRawDamage <= parryThreshold
+  }
+
   // Display attack name: use attack_rename.json if present, else formatted prefab
   const getAttackDisplayName = (attack: { prefab: string }) => {
     const key = attack.prefab
@@ -297,8 +318,15 @@ function EnemySelector({ onEnemyChange, combatMultiplier = 1, onStarMultiplierCh
       {currentEnemy && currentEnemy.attacks.length > 0 && (
         <div className="enemy-attacks">
           <h3>Attacks</h3>
+          <p className="parry-threshold-note">
+            {canParry
+              ? `Parry Threshold: ${Math.round(parryThreshold * 100) / 100} (raw incoming damage at or below this can be parried)`
+              : 'Select a shield or weapon to see which attacks are parryable'}
+          </p>
           {currentEnemy.attacks.map((attack, index) => {
             const damageTypes = getDamageTypes(attack.damages)
+            const totalRawDamage = damageTypes.reduce((sum, { value }) => sum + value, 0)
+            const attackIsParryable = isParryable(totalRawDamage)
             const isSelected = selectedAttackIndex === index
             return (
               <div
@@ -309,7 +337,12 @@ function EnemySelector({ onEnemyChange, combatMultiplier = 1, onStarMultiplierCh
                 tabIndex={0}
                 onKeyDown={(e) => e.key === 'Enter' && (isSelected ? setSelectedAttackIndex(null) : setSelectedAttackIndex(index))}
               >
-                <h4 className="attack-name">{getAttackDisplayName(attack)}</h4>
+                <div className="attack-name-row">
+                  <h4 className="attack-name">{getAttackDisplayName(attack)}</h4>
+                  <span className={`parry-badge ${attackIsParryable ? 'parryable' : 'not-parryable'}`}>
+                    {attackIsParryable ? 'Parryable' : 'Not Parryable'}
+                  </span>
+                </div>
                 {damageTypes.length > 0 ? (
                   <div className="damage-types">
                     {damageTypes.map(({ type, value }) => (

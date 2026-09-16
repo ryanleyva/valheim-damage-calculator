@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { usePersistentState } from '../hooks/usePersistentState'
 
 interface CombatSetting {
   name: string
@@ -11,24 +12,23 @@ interface CombatSettingsProps {
 
 function CombatSettings({ onMultiplierChange }: CombatSettingsProps) {
   const [combatSettings, setCombatSettings] = useState<CombatSetting[]>([])
-  const [selectedMultiplier, setSelectedMultiplier] = useState<number>(1)
+  // Defaults to 1 (Normal) the first time; persisted afterward.
+  const [selectedMultiplier, setSelectedMultiplier] = usePersistentState<number>('combatMultiplier', 1)
+
+  useEffect(() => {
+    onMultiplierChange?.(selectedMultiplier)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedMultiplier])
 
   useEffect(() => {
     fetch('/data/combat_settings.json')
       .then((response) => response.json())
       .then((data: CombatSetting[]) => {
         setCombatSettings(data)
-        // Set default to Normal (multiplier 1)
-        const normal = data.find((setting) => setting.multiplier === 1)
-        if (normal) {
-          setSelectedMultiplier(normal.multiplier)
-          onMultiplierChange?.(normal.multiplier)
-        }
       })
       .catch((error) => {
         console.error('Error loading combat settings:', error)
       })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const handleCombatSettingClick = (multiplier: number) => {

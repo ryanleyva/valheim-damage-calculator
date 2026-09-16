@@ -144,11 +144,6 @@
         "newName": "Dvergr Mage (Support)"
     },
     {
-        "oldName": "DvergerTest",
-        "newName": "Dvergr (Test)",
-        "ignore": true
-    },
-    {
         "oldName": "Eikthyr",
         "newName": "Eikthyr"
     },
@@ -325,10 +320,6 @@
         "newName": "Skeleton"
     },
     {
-        "oldName": "Skeleton_Friendly",
-        "newName": "Skelett"
-    },
-    {
         "oldName": "Skeleton_Hildir",
         "newName": "Brenna"
     },
@@ -343,10 +334,6 @@
     {
         "oldName": "Skeleton_Poison",
         "newName": "Rancid Remains"
-    },
-    {
-        "oldName": "staff_greenroots_tentaroot",
-        "newName": "Summoned Root"
     },
     {
         "oldName": "StoneGolem",

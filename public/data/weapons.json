@@ -1,0 +1,52 @@
+[
+  { "prefab": "AxeStone", "displayName": "Stone Axe", "weaponType": "Axe", "twoHanded": false, "blockPower": 3, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "AxeFlint", "displayName": "Flint Axe", "weaponType": "Axe", "twoHanded": false, "blockPower": 4, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "AxeBronze", "displayName": "Bronze Axe", "weaponType": "Axe", "twoHanded": false, "blockPower": 12, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "AxeIron", "displayName": "Iron Axe", "weaponType": "Axe", "twoHanded": false, "blockPower": 21, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "AxeBlackMetal", "displayName": "Black Metal Axe", "weaponType": "Axe", "twoHanded": false, "blockPower": 39, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "AxeJotunBane", "displayName": "Jotun Bane", "weaponType": "Axe", "twoHanded": false, "blockPower": 48, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+
+  { "prefab": "SwordBronze", "displayName": "Bronze Sword", "weaponType": "Sword", "twoHanded": false, "blockPower": 12, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "SwordIron", "displayName": "Iron Sword", "weaponType": "Sword", "twoHanded": false, "blockPower": 21, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "SwordSilver", "displayName": "Silver Sword", "weaponType": "Sword", "twoHanded": false, "blockPower": 30, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "SwordBlackMetal", "displayName": "Black Metal Sword", "weaponType": "Sword", "twoHanded": false, "blockPower": 39, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "SwordMistwalker", "displayName": "Mistwalker", "weaponType": "Sword", "twoHanded": false, "blockPower": 48, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "SwordNidhogg", "displayName": "Nidhögg", "weaponType": "Sword", "twoHanded": false, "blockPower": 57, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "SwordDyrnwyn", "displayName": "Dyrnwyn", "weaponType": "Sword", "twoHanded": false, "blockPower": 57, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "SwordKrom", "displayName": "Krom", "weaponType": "Sword", "twoHanded": true, "blockPower": 52, "blockPowerPerLevel": 0, "blockForce": 50, "blockForcePerLevel": 10, "parryBonus": 2 },
+  { "prefab": "SwordSlayer", "displayName": "Slayer", "weaponType": "Sword", "twoHanded": true, "blockPower": 64, "blockPowerPerLevel": 0, "blockForce": 50, "blockForcePerLevel": 10, "parryBonus": 2 },
+
+  { "prefab": "MaceClub", "displayName": "Club", "weaponType": "Club", "twoHanded": false, "blockPower": 3, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "MaceBronze", "displayName": "Bronze Mace", "weaponType": "Club", "twoHanded": false, "blockPower": 12, "blockPowerPerLevel": 0, "blockForce": 30, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "MaceIron", "displayName": "Iron Mace", "weaponType": "Club", "twoHanded": false, "blockPower": 21, "blockPowerPerLevel": 0, "blockForce": 30, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "MaceFrostner", "displayName": "Frostner", "weaponType": "Club", "twoHanded": false, "blockPower": 30, "blockPowerPerLevel": 0, "blockForce": 30, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "MacePorcupine", "displayName": "Porcupine", "weaponType": "Club", "twoHanded": false, "blockPower": 39, "blockPowerPerLevel": 0, "blockForce": 30, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "MaceFlametal", "displayName": "Flametal Mace", "weaponType": "Club", "twoHanded": false, "blockPower": 57, "blockPowerPerLevel": 0, "blockForce": 30, "blockForcePerLevel": 5, "parryBonus": 2 },
+
+  { "prefab": "SpearFlint", "displayName": "Flint Spear", "weaponType": "Spear", "twoHanded": false, "blockPower": 4, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "SpearBronze", "displayName": "Bronze Spear", "weaponType": "Spear", "twoHanded": false, "blockPower": 12, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "SpearAncientBark", "displayName": "Ancient Bark Spear", "weaponType": "Spear", "twoHanded": false, "blockPower": 21, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "SpearFang", "displayName": "Fang Spear", "weaponType": "Spear", "twoHanded": false, "blockPower": 30, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "SpearCarapace", "displayName": "Carapace Spear", "weaponType": "Spear", "twoHanded": false, "blockPower": 48, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "SpearSplitnir", "displayName": "Splitnir", "weaponType": "Spear", "twoHanded": false, "blockPower": 57, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+
+  { "prefab": "AtgeirBronze", "displayName": "Bronze Atgeir", "weaponType": "Polearm", "twoHanded": true, "blockPower": 16, "blockPowerPerLevel": 0, "blockForce": 40, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "AtgeirIron", "displayName": "Iron Atgeir", "weaponType": "Polearm", "twoHanded": true, "blockPower": 28, "blockPowerPerLevel": 0, "blockForce": 40, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "AtgeirBlackMetal", "displayName": "Black Metal Atgeir", "weaponType": "Polearm", "twoHanded": true, "blockPower": 52, "blockPowerPerLevel": 0, "blockForce": 40, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "AtgeirHimminafl", "displayName": "Himminafl", "weaponType": "Polearm", "twoHanded": true, "blockPower": 64, "blockPowerPerLevel": 0, "blockForce": 40, "blockForcePerLevel": 5, "parryBonus": 2 },
+
+  { "prefab": "BattleaxeBronze", "displayName": "Battleaxe", "weaponType": "Battleaxe", "twoHanded": true, "blockPower": 28, "blockPowerPerLevel": 0, "blockForce": 70, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "BattleaxeCrystal", "displayName": "Crystal Battleaxe", "weaponType": "Battleaxe", "twoHanded": true, "blockPower": 40, "blockPowerPerLevel": 0, "blockForce": 70, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "BattleaxeBlackMetal", "displayName": "Black Metal Battleaxe", "weaponType": "Battleaxe", "twoHanded": true, "blockPower": 52, "blockPowerPerLevel": 0, "blockForce": 70, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "BattleaxeSkullSplittur", "displayName": "Skull Splittur", "weaponType": "Battleaxe", "twoHanded": true, "blockPower": 64, "blockPowerPerLevel": 0, "blockForce": 70, "blockForcePerLevel": 5, "parryBonus": 2 },
+
+  { "prefab": "SledgeStagbreaker", "displayName": "Stagbreaker", "weaponType": "Sledgehammer", "twoHanded": true, "blockPower": 4, "blockPowerPerLevel": 0, "blockForce": 50, "blockForcePerLevel": 10, "parryBonus": 2 },
+  { "prefab": "SledgeIron", "displayName": "Iron Sledge", "weaponType": "Sledgehammer", "twoHanded": true, "blockPower": 28, "blockPowerPerLevel": 0, "blockForce": 50, "blockForcePerLevel": 10, "parryBonus": 2 },
+  { "prefab": "SledgeDemolisher", "displayName": "Demolisher", "weaponType": "Sledgehammer", "twoHanded": true, "blockPower": 52, "blockPowerPerLevel": 0, "blockForce": 50, "blockForcePerLevel": 10, "parryBonus": 2 },
+
+  { "prefab": "KnifeFlint", "displayName": "Flint Knife", "weaponType": "Knife", "twoHanded": false, "blockPower": 2, "blockPowerPerLevel": 0, "blockForce": 10, "blockForcePerLevel": 5, "parryBonus": 4 },
+  { "prefab": "KnifeSilver", "displayName": "Silver Knife", "weaponType": "Knife", "twoHanded": false, "blockPower": 2, "blockPowerPerLevel": 0, "blockForce": 10, "blockForcePerLevel": 5, "parryBonus": 4 },
+  { "prefab": "KnifeBlackMetal", "displayName": "Black Metal Knife", "weaponType": "Knife", "twoHanded": false, "blockPower": 2, "blockPowerPerLevel": 0, "blockForce": 10, "blockForcePerLevel": 5, "parryBonus": 4 },
+  { "prefab": "KnifeAbyssalRazor", "displayName": "Abyssal Razor", "weaponType": "Knife", "twoHanded": false, "blockPower": 2, "blockPowerPerLevel": 0, "blockForce": 10, "blockForcePerLevel": 5, "parryBonus": 4 },
+  { "prefab": "KnifeSkollAndHati", "displayName": "Skoll and Hati", "weaponType": "Knife", "twoHanded": false, "blockPower": 24, "blockPowerPerLevel": 0, "blockForce": 10, "blockForcePerLevel": 5, "parryBonus": 4 }
+]
