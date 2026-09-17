@@ -205,27 +205,36 @@ function ArmorSelector({ onArmorChange, onTotalArmorChange, onResistancesChange,
     return val != null ? val : null
   }
 
-  // Combined resistances from armor + consumable. Resistances don't stack - take the best (lowest multiplier).
+  // Combined resistances from armor + consumables. A consumable's modifier for a damage
+  // type completely overrides any armor modifier for that same type (not "best wins") -
+  // e.g. a Weak fire armor modifier is fully negated by a Fire Resistance mead, even
+  // though the reverse (a better armor modifier losing to a worse potion) can also happen.
+  // Multiple armor pieces modifying the same type still combine via best-wins.
   const combinedResistances = useMemo(() => {
-    const byType: Record<string, number> = {}
     const getMult = (level: string) =>
       damageResistanceMap[level] ?? damageResistanceMap[level?.toLowerCase() ?? ''] ?? null
-    const addModifiers = (mods: Record<string, string> | null) => {
-      if (!mods) return
-      Object.entries(mods).forEach(([dmgType, level]) => {
-        const key = dmgType.toLowerCase()
-        const mult = getMult(level)
-        if (mult != null) {
-          byType[key] = byType[key] != null ? Math.min(byType[key], mult) : mult
-        }
+    const collectModifiers = (sources: (Record<string, string> | null | undefined)[]) => {
+      const byType: Record<string, number> = {}
+      sources.forEach((mods) => {
+        if (!mods) return
+        Object.entries(mods).forEach(([dmgType, level]) => {
+          const key = dmgType.toLowerCase()
+          const mult = getMult(level)
+          if (mult != null) {
+            byType[key] = byType[key] != null ? Math.min(byType[key], mult) : mult
+          }
+        })
       })
+      return byType
     }
-    selectedArmorPieces.forEach(({ item }) => addModifiers(item?.armorDamageModifiers ?? null))
-    selectedConsumables.forEach((prefab) => {
-      const consumable = prefab ? consumables.find((c) => c.prefab === prefab) : null
-      addModifiers(consumable?.damageModifiers ?? null)
-    })
-    return byType
+
+    const armorByType = collectModifiers(selectedArmorPieces.map(({ item }) => item?.armorDamageModifiers))
+    const consumableByType = collectModifiers(
+      selectedConsumables.map((prefab) => (prefab ? consumables.find((c) => c.prefab === prefab)?.damageModifiers : null))
+    )
+
+    // Consumables override armor entirely per damage type - not combined via Math.min.
+    return { ...armorByType, ...consumableByType }
   }, [selectedArmorPieces, selectedConsumables, consumables, damageResistanceMap])
 
   useEffect(() => {
@@ -547,8 +556,8 @@ function ArmorSelector({ onArmorChange, onTotalArmorChange, onResistancesChange,
         <div className="armor-resistances">
           <h3 className="armor-resistances-title">Effective Damage Resistances</h3>
           <p className="armor-resistances-note">
-            Resistances don't stack — the best modifier wins, so a consumable fully negates a weaker armor modifier
-            for the same damage type (and vice versa).
+            A consumable's resistance to a damage type completely overrides any armor modifier for that same type
+            (not just "best wins") — for example, a Fire Resistance mead negates a Weak-to-fire armor modifier entirely.
           </p>
           <div className="armor-resistance-list">
             {Object.entries(combinedResistances)
