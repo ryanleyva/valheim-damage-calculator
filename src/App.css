@@ -296,19 +296,33 @@ header h1 {
 
 .health-lost-types {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.6rem;
   margin-bottom: 0.5rem;
+}
+
+.health-lost-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
 .health-lost-badge {
   display: inline-block;
+  align-self: flex-start;
   padding: 0.4rem 0.75rem;
   background-color: #6d3a2f;
   color: #e8dcc6;
   border-radius: 6px;
   font-size: 0.9rem;
   font-weight: 500;
+}
+
+.health-lost-formula-line {
+  color: #d4c4a8;
+  font-size: 0.8rem;
+  font-style: italic;
+  margin: 0 0 0 0.1rem;
 }
 
 .health-lost-total {

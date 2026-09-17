@@ -60,6 +60,23 @@ function applyResistance(
   return rawDamage * mult
 }
 
+// Which modifier actually determined the multiplier, for display purposes.
+function getResistanceSource(
+  damageType: string,
+  resistances: Record<string, number>,
+  bonemassEnabled: boolean
+): { mult: number; source: 'resistance' | 'bonemass' | null } {
+  const key = damageType.toLowerCase()
+  const resistMult = resistances[key] ?? 1
+  const bonemassApplies = bonemassEnabled && PHYSICAL_DAMAGE_TYPES.includes(key)
+  if (bonemassApplies && BONEMASS_RESISTANCE < resistMult) {
+    return { mult: BONEMASS_RESISTANCE, source: 'bonemass' }
+  }
+  return { mult: resistMult, source: resistMult !== 1 ? 'resistance' : null }
+}
+
+const round2 = (n: number) => Math.round(n * 100) / 100
+
 function EnemySelector({ onEnemyChange, combatMultiplier = 1, onStarMultiplierChange, totalArmor = 0, resistances = {}, bonemassEnabled = false, playerHealth = 100, parryThreshold = 0, canParry = false }: EnemySelectorProps) {
   const [enemies, setEnemies] = useState<Enemy[]>([])
   const [searchTerm, setSearchTerm] = useState<string>('')
@@ -359,12 +376,26 @@ function EnemySelector({ onEnemyChange, combatMultiplier = 1, onStarMultiplierCh
                     <h4 className="health-lost-title">Damage to player</h4>
                     <div className="health-lost-types">
                       {damageTypes.map(({ type, value }) => {
-                        const effectiveDamage = applyResistance(value, type, resistances, bonemassEnabled)
+                        const { mult, source } = getResistanceSource(type, resistances, bonemassEnabled)
+                        const effectiveDamage = value * mult
+                        const armorHalf = effectiveDamage / 2
+                        const usesFlatFormula = totalArmor < armorHalf
                         const healthLost = calcHealthLost(effectiveDamage, totalArmor)
                         return (
-                          <span key={type} className="health-lost-badge">
-                            {type}: {Math.round(healthLost * 100) / 100}
-                          </span>
+                          <div key={type} className="health-lost-breakdown">
+                            <span className="health-lost-badge">
+                              {type}: {round2(healthLost)}
+                            </span>
+                            <p className="health-lost-formula-line">
+                              {mult !== 1
+                                ? `${round2(value)} × ${mult} (${source === 'bonemass' ? 'Bonemass' : 'resistance'}) = ${round2(effectiveDamage)}`
+                                : `${round2(value)} (no resistance)`}
+                              {' — '}
+                              {usesFlatFormula
+                                ? `armor ${totalArmor} < ${round2(armorHalf)}, so ${round2(effectiveDamage)} − ${totalArmor} = ${round2(healthLost)}`
+                                : `armor ${totalArmor} ≥ ${round2(armorHalf)}, so ${round2(effectiveDamage)}² ÷ (${totalArmor} × 4) = ${round2(healthLost)}`}
+                            </p>
+                          </div>
                         )
                       })}
                     </div>
