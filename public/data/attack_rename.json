@@ -738,5 +738,17 @@
     {
         "oldName": "Hen_peck",
         "newName": "Peck"
+    },
+    {
+        "oldName": "TrollFrost_punch",
+        "newName": "Punch"
+    },
+    {
+        "oldName": "TrollFrost_groundslam",
+        "newName": "Ground Slam"
+    },
+    {
+        "oldName": "TrollFrost_throw",
+        "newName": "Boulder Throw"
     }
 ]

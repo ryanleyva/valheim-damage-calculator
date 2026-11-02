@@ -9279,6 +9279,116 @@
       "circulateWhileCharging": false
     },
     {
+      "prefab": "TrollFrost",
+      "displayName": "Gammeltroll",
+      "faction": "DeepNorth",
+      "health": 3000,
+      "isBoss": false,
+      "damageModifiers": {
+        "blunt": "Resistant",
+        "slash": "Resistant",
+        "pierce": "Resistant",
+        "fire": "Immune",
+        "frost": "Resistant",
+        "lightning": "Normal",
+        "poison": "Normal",
+        "spirit": "Immune",
+        "chop": "Immune",
+        "pickaxe": "Weak"
+      },
+      "staggerWhenBlocked": true,
+      "staggerDamageFactor": 0.3,
+      "defaultItems": [],
+      "randomWeapons": [],
+      "randomShields": [],
+      "attacks": [
+        {
+          "name": "TrollFrost_punch",
+          "damage": {
+            "blunt": 220,
+            "slash": 0,
+            "pierce": 0,
+            "fire": 0,
+            "frost": 0,
+            "lightning": 0,
+            "poison": 0,
+            "spirit": 0,
+            "chop": 100,
+            "pickaxe": 40
+          },
+          "damagePerLevel": {
+            "blunt": 0,
+            "slash": 0,
+            "pierce": 0,
+            "fire": 0,
+            "frost": 0,
+            "lightning": 0,
+            "poison": 0,
+            "spirit": 0,
+            "chop": 0,
+            "pickaxe": 0
+          },
+          "displayName": "Punch"
+        },
+        {
+          "name": "TrollFrost_groundslam",
+          "damage": {
+            "blunt": 200,
+            "slash": 0,
+            "pierce": 0,
+            "fire": 0,
+            "frost": 0,
+            "lightning": 0,
+            "poison": 0,
+            "spirit": 0,
+            "chop": 100,
+            "pickaxe": 40
+          },
+          "damagePerLevel": {
+            "blunt": 0,
+            "slash": 0,
+            "pierce": 0,
+            "fire": 0,
+            "frost": 0,
+            "lightning": 0,
+            "poison": 0,
+            "spirit": 0,
+            "chop": 0,
+            "pickaxe": 0
+          },
+          "displayName": "Ground Slam"
+        },
+        {
+          "name": "TrollFrost_throw",
+          "damage": {
+            "blunt": 150,
+            "slash": 0,
+            "pierce": 0,
+            "fire": 0,
+            "frost": 0,
+            "lightning": 0,
+            "poison": 0,
+            "spirit": 0,
+            "chop": 100,
+            "pickaxe": 80
+          },
+          "damagePerLevel": {
+            "blunt": 0,
+            "slash": 0,
+            "pierce": 0,
+            "fire": 0,
+            "frost": 0,
+            "lightning": 0,
+            "poison": 0,
+            "spirit": 0,
+            "chop": 0,
+            "pickaxe": 0
+          },
+          "displayName": "Boulder Throw"
+        }
+      ]
+    },
+    {
       "prefab": "Troll_Summoned",
       "displayName": "Summoned Troll",
       "faction": "PlayerSpawned",

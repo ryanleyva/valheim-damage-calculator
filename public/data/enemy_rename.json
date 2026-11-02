@@ -390,5 +390,9 @@
     {
         "oldName": "Wraith",
         "newName": "Wraith"
+    },
+    {
+        "oldName": "TrollFrost",
+        "newName": "Gammeltroll"
     }
 ]
