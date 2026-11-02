@@ -502,5 +502,17 @@
     {
         "oldName": "StoneGolem_spikes",
         "newName": "Stone Golem Spikes"
+    },
+    {
+        "oldName": "HelmetDNHeavy",
+        "newName": "Helmet of the Protector"
+    },
+    {
+        "oldName": "ArmorHeavyDNChest",
+        "newName": "Breastplate of the Protector"
+    },
+    {
+        "oldName": "ArmorHeavyDNLegs",
+        "newName": "Trousers of the Protector"
     }
 ]

@@ -13,6 +13,7 @@
   { "prefab": "SwordMistwalker", "displayName": "Mistwalker", "weaponType": "Sword", "twoHanded": false, "blockPower": 48, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
   { "prefab": "SwordNidhogg", "displayName": "Nidhögg", "weaponType": "Sword", "twoHanded": false, "blockPower": 57, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
   { "prefab": "SwordDyrnwyn", "displayName": "Dyrnwyn", "weaponType": "Sword", "twoHanded": false, "blockPower": 57, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
+  { "prefab": "SwordNordic", "displayName": "Nordic Sword", "weaponType": "Sword", "twoHanded": false, "blockPower": 66, "blockPowerPerLevel": 0, "blockForce": 20, "blockForcePerLevel": 5, "parryBonus": 2 },
   { "prefab": "SwordKrom", "displayName": "Krom", "weaponType": "Sword", "twoHanded": true, "blockPower": 52, "blockPowerPerLevel": 0, "blockForce": 50, "blockForcePerLevel": 10, "parryBonus": 2 },
   { "prefab": "SwordSlayer", "displayName": "Slayer", "weaponType": "Sword", "twoHanded": true, "blockPower": 64, "blockPowerPerLevel": 0, "blockForce": 50, "blockForcePerLevel": 10, "parryBonus": 2 },
 

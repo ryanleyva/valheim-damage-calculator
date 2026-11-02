@@ -1662,6 +1662,49 @@
       "equipStatusEffect": null,
       "setStatusEffect": null,
       "armorDamageModifiers": null
+    },
+    {
+      "prefab": "HelmetDNHeavy",
+      "displayName": "Helmet of the Protector",
+      "itemType": "Helmet",
+      "armor": 46.0,
+      "armorPerLevel": 2.0,
+      "movementModifier": 0.0,
+      "setName": "dn_heavy_armor",
+      "setSize": 3,
+      "equipStatusEffect": null,
+      "setStatusEffect": null,
+      "armorDamageModifiers": null
+    },
+    {
+      "prefab": "ArmorHeavyDNChest",
+      "displayName": "Breastplate of the Protector",
+      "itemType": "Chest",
+      "armor": 44.0,
+      "armorPerLevel": 2.0,
+      "movementModifier": -0.05,
+      "setName": "dn_heavy_armor",
+      "setSize": 3,
+      "equipStatusEffect": null,
+      "setStatusEffect": null,
+      "armorDamageModifiers": {
+        "frost": "Resistant"
+      }
+    },
+    {
+      "prefab": "ArmorHeavyDNLegs",
+      "displayName": "Trousers of the Protector",
+      "itemType": "Legs",
+      "armor": 44.0,
+      "armorPerLevel": 2.0,
+      "movementModifier": -0.05,
+      "setName": "dn_heavy_armor",
+      "setSize": 3,
+      "equipStatusEffect": null,
+      "setStatusEffect": null,
+      "armorDamageModifiers": {
+        "frost": "Resistant"
+      }
     }
   ]
 }
